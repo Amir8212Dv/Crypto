@@ -1,14 +1,14 @@
 import React , {useEffect, useState } from "react";
 // CSS
-import styles from './Coins.module.css'
+import styles from '../styles/Landing.module.css'
 // Gif
 import Spinner from '../gif/spinner.gif'
 // Components
-import SingleCoine from "./SingleCoine";
+import Coine from "./Coine";
 import Pagination from "./Pagination";
 import Search from "./Search";
 // Method
-import api from './api'
+import api from '../services/api'
 
 
 const Coins = (props) => {
@@ -56,17 +56,14 @@ const Coins = (props) => {
                         <span className={styles.priceChange}>Daily</span>
                         <span className={styles.marketCap}>Market cap</span>
                     </div>
-                    {coins.length ? coins.map(coin =><SingleCoine data={coin} key={coin.id} />) : undefined}
+                    {coins.length ? coins.map(coin =><Coine data={coin} key={coin.id} />) : undefined}
                 
                 </div>
                 <div className={styles.bottom}>
                     <Pagination page={page} side='left' />
-                {coins.length > 10 &&  
-                <button onClick={() => {
-                    setContainerSize(containerSize === styles.coinsContainer 
-                        ? styles.coinsBigContainer 
-                        : styles.container)
-                    }}>{containerSize === styles.container ? 'more ...' : '... less'}</button>}
+                {coins.length > 10 &&  <button onClick={() => {
+                    setContainerSize(containerSize === styles.coinsContainer ? styles.coinsBigContainer : styles.coinsContainer)
+                    }}>{containerSize === styles.coinsContainer ? 'more ...' : '... less'}</button>}
                 </div>
             </div>
         </>

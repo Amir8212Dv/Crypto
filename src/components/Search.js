@@ -1,6 +1,6 @@
 import React from 'react';
 // CSS
-import styles from './Search.module.css'
+import styles from '../styles/Search.module.css'
 
 
 const Search = (props) => {
