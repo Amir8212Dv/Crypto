@@ -1,0 +1,14 @@
+.container {
+    margin: 30px auto;
+    width: fit-content;
+}
+
+.container input {
+    width: 350px;
+    height: 30px;
+    padding: 5px;
+    font-size: larger;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}

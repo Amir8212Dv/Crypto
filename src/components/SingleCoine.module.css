@@ -1,0 +1,64 @@
+.container {
+    width: fit-content;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid silver;
+
+}
+
+.container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.image {
+    width: 25px;
+    margin: 0%;
+}
+
+.rank {
+    width: 20px;
+    margin: auto 10px;
+}
+
+.name {
+    width: 200px;
+    margin-left: 5px;
+    
+}
+
+.symbol {
+    width: 100px;
+    margin-right: 40px;
+}
+
+.price {
+    width: 100px;
+    margin-right: 60px;
+    color: #1675d6;
+}
+
+.marketCap {
+    width: 120px;
+    margin: 0 10px;
+}
+.priceChange_zero,
+.priceChange_positive,
+.priceChange_negetive {
+    width: 100px;
+    margin-right: 40px;
+}
+
+.priceChange_zero {
+    color: black;
+}
+.priceChange_positive {
+    color: rgb(0, 170, 0);
+}
+.priceChange_negetive {
+    color: rgb(255, 0, 0);
+}

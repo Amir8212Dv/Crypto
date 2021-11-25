@@ -1,0 +1,128 @@
+.main_div {
+    height: 100%;
+    width: 100%;
+}
+
+.container , .coinsBigContainer {
+    width: fit-content;
+    height: fit-content;
+    border-bottom: 4px solid rgb(160, 160, 160);
+    margin: auto auto 10px auto;
+    overflow: hidden;
+    background-color: white;
+}
+
+.coinsContainer {
+    max-height: 500px;
+    overflow-y: scroll;
+
+}
+
+.coinsContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.top{
+    margin-bottom: 20px;
+}
+
+.top , .title , .bottom {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top p {
+    font-size: 1.7rem;
+    margin-left: 20px;
+
+}
+
+
+
+
+.parentContainer {
+    height: fit-content;
+    width: fit-content;
+    margin:auto;
+    background-color: rgb(247, 247, 247);
+    border-radius: 10px;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+.coinsBigContainer {
+    height: fit-content;
+}
+
+
+.spinner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.spinner img {
+    display: block;
+    margin: 15rem auto;
+    
+}
+.bottom {
+    margin: 15px 0 auto;
+}
+
+.bottom button {
+    width: 65px;
+    padding: 5px;
+    font-size: 1rem;
+    margin-right: 20px;
+    border: none;
+    background-color: rgb(65, 105, 225);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.bottom button:hover {
+    background-color: rgb(45, 85, 205);
+}
+
+.title{
+    width: fit-content;
+    height: 40px;
+    border-bottom: 1px solid silver;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.rank {
+    margin-left: 10px;
+}
+.name {
+    width: 213px;
+    margin-left: 25px;
+}
+
+.symbol {
+    width: fit-content;
+    margin-right: 100px;
+}
+
+.price {
+    width: fit-content;
+    margin-right: 132px;
+}
+.priceChange {
+    width: fit-content;
+    margin-right: 100px;
+}
+
+.marketCap {
+    width: fit-content;
+    margin-left: 12px;
+    margin-right: 45px;
+}
