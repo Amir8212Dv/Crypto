@@ -42,10 +42,6 @@
     color: #1675d6;
 }
 
-.marketCap {
-    width: 120px;
-    margin: 0 10px;
-}
 .priceChange_zero,
 .priceChange_positive,
 .priceChange_negetive {
@@ -61,4 +57,8 @@
 }
 .priceChange_negetive {
     color: rgb(255, 0, 0);
+}
+.marketCap {
+    width: 130px;
+    margin: 0 10px;
 }
