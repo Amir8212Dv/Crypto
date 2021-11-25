@@ -20,7 +20,7 @@ const Pagination = ({page}) => {
                     <li id={page === 5 ? styles.active : undefined}><Link to='/coins/5'>5</Link></li>
                     <li className={styles.dot}>...</li>
                 </>}
-                { page >= 5 && page <= 46 &&
+                { page >= 5 && page <= 41 &&
                 <>
                     <li className={styles.dot}>...</li>
                     <li ><Link to={`/coins/${page - 2}`}>{page - 2}</Link></li>
@@ -30,16 +30,16 @@ const Pagination = ({page}) => {
                     <li ><Link to={`/coins/${page + 2}`}>{page + 2}</Link></li>
                     <li className={styles.dot}>...</li>
                 </>}
-                {page > 46 && 
+                {page > 41 && 
                 <>
                     <li className={styles.dot}>...</li>
-                    <li id={page === 46 ? styles.active : undefined}><Link to='/coins/46'>46</Link></li>
-                    <li id={page === 47 ? styles.active : undefined}><Link to='/coins/47'>47</Link></li>
-                    <li id={page === 48 ? styles.active : undefined}><Link to='/coins/48'>48</Link></li>
-                    <li id={page === 49 ? styles.active : undefined}><Link to='/coins/49'>49</Link></li>
+                    <li id={page === 41 ? styles.active : undefined}><Link to='/coins/41'>41</Link></li>
+                    <li id={page === 42 ? styles.active : undefined}><Link to='/coins/42'>42</Link></li>
+                    <li id={page === 43 ? styles.active : undefined}><Link to='/coins/43'>43</Link></li>
+                    <li id={page === 44 ? styles.active : undefined}><Link to='/coins/44'>44</Link></li>
                 </>}
-                <li id={page === 50 ? styles.active : undefined}><Link to='./50'>50</Link></li>
-                {page < 44 && <li  className={styles.nextBtn}><Link to={`/coins/${page + 1}`}>next</Link></li>}
+                <li id={page === 45 ? styles.active : undefined}><Link to='./45'>45</Link></li>
+                {page < 45 && <li  className={styles.nextBtn}><Link to={`/coins/${page + 1}`}>next</Link></li>}
             </ul>}
         </>
     )
