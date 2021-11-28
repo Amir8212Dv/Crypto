@@ -68,6 +68,7 @@
 .spinner img {
     display: block;
     margin: 15rem auto;
+    width: 30px;
     
 }
 .bottom {
