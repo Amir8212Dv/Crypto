@@ -49,12 +49,12 @@ const Coins = (props) => {
                 </div>
                 <div className={containerSize}>
                     <div className={styles.title}>
-                        <span className={styles.rank}>#</span>
-                        <span className={styles.name}>Coin</span>
-                        <span className={styles.symbol}>Symbol</span>
-                        <span className={styles.price}>Price</span>
-                        <span className={styles.priceChange}>Daily</span>
-                        <span className={styles.marketCap}>Market cap</span>
+                        <p className={styles.rank}>#</p>
+                        <p className={styles.name}>Coin</p>
+                        <p className={styles.symbol}>Symbol</p>
+                        <p className={styles.price}>Price</p>
+                        <p className={styles.priceChange}>Daily</p>
+                        <p className={styles.marketCap}>Market cap</p>
                     </div>
                     {coins.length ? coins.map(coin =><Coine data={coin} key={coin.id} />) : undefined}
                 

@@ -9,8 +9,8 @@ const Coine = props => {
    
     return (
         <div className={styles.container}>
-            <div>
                 <span className={styles.rank}>{market_cap_rank}</span>
+            <div className={styles.imgName}>
                 <img src={image} alt={id} className={styles.image}/>
                 <p className={styles.name}>{name}</p>
             </div>

@@ -1,14 +1,18 @@
-.container {
-    margin: 30px auto;
-    width: fit-content;
+
+@media screen and (max-width : 600px) {
+    .container {
+        width: 90% !important;
+    }
+    
+}
+@media screen and (max-width : 950px) and (min-width : 600px) {
+    .container {
+        width: 60%;
+    }
 }
 
-.container input {
-    width: 350px;
-    height: 30px;
-    padding: 5px;
-    font-size: larger;
-    border: none;
-    outline: none;
-    border-radius: 5px;
+@media  screen and (min-width : 950px) {
+    .container {
+        width: 35%;
+    }
 }

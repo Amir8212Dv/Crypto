@@ -1,10 +1,10 @@
 .container {
     width: fit-content;
     height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border-bottom: 1px solid silver;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
 }
 
@@ -61,4 +61,70 @@
 .marketCap {
     width: 130px;
     margin: 0 10px;
+}
+
+@media screen and (max-width : 350px) {
+    .priceChange_zero,
+    .priceChange_positive,
+    .priceChange_negetive  {
+        display: none;
+    }
+    .rank {
+        width: 30px !important;
+        margin: 0;
+        margin-left: 2px;
+    }
+    .name {
+        width: 130px !important;
+        margin: 0;
+    }
+    .symbol {
+        width: 100px !important;
+        margin: 0;
+    }
+    .price {
+        margin: 0;
+    }
+    
+    
+}
+
+@media screen and (max-width : 600px) {
+    .priceChange_zero,
+    .priceChange_positive,
+    .priceChange_negetive  {
+        margin: 0;
+    }
+    .marketCap {
+        display: none;
+    }
+    .container {
+        width: 100% !important;
+    }
+    .image {
+        width: 15px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width : 600px) and (min-width : 350px) {
+    .rank {
+        width: 5% !important;
+        margin: 0 2px 0 2px;
+    }
+    .name {
+        margin: 0;
+    }
+    .imgName {
+        width: 35%;
+    }
+    .symbol {
+        width: 20% !important;
+        margin: 0;
+    }
+    .price {
+        width: 25%;
+        margin: 0;
+    }
+    
 }
